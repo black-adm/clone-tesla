@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/ico" href="./img/icone.ico">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tesla Clone</title>
+ 
+</head>
+
+<body>
+    <section class="main">
+        <div class="center">
+    <header>
+        <img class="logo" src="./img/tesla-logo.png" alt="logo">
+        <div class="navbar">
+                    <a href="#" class="model">Model S</a>
+                    <a href="#" class="model">Model 3</a>
+                    <a href="#" class="model">Model X</a>
+                    <a href="#" class="model">Model Y</a>
+                    <a href="#" class="model">Solar Roof</a>
+        </div>
+        <div class="navbar">
+            <a href="#" class="model">Shop</a>
+            <a href="#"><i class="fas fa-bars"></i>Menu</a>
+        </div>
+        </header>      
+          <div class="title">
+            <h2>Model Y</h2>
+            <p>Order Online for Touchless Delivery</p>
+        </div>
+        <div class="buttons">
+            <button type="submit" class="btn">CUSTOM ORDER</button>
+            <button type="submit" class="btn" style="background-color: #d0d1d2; color: #212121;">EXISTING INVENTORY</button>
+        </div>
+        <a href="#" class="seta"><i class="fas fa-chevron-down"></i></a>
+    </div>
+</section>
+<script src="https://kit.fontawesome.com/3f5a5e6188.js" crossorigin="anonymous"></script>
+<script>
+    function typeWriter(elemento) {
+  const textoArray = elemento.innerHTML.split('');
+  elemento.innerHTML = '';
+  textoArray.forEach((letra, i) => {
+  setTimeout(() => elemento.innerHTML += letra, 50 * i);    
+  });
+}
+
+const titulo = document.querySelector('p');
+typeWriter(titulo);
+</script>
+</body>
+
+</html>
